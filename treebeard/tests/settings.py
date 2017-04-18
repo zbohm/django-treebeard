@@ -73,12 +73,6 @@ if DJANGO_VERSION < (1, 9):
 else:
 
     MIGRATION_MODULES = {
-        'django.contrib.auth': None,
-        'django.contrib.contenttypes': None,
-        'django.contrib.sessions': None,
-        'django.contrib.admin': None,
-        'django.contrib.messages': None,
-        'treebeard': None,
         'treebeard.tests': None,
     }
 
