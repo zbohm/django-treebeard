@@ -54,27 +54,17 @@ def get_db_conf():
 DATABASES = {'default': get_db_conf()}
 SECRET_KEY = '7r33b34rd'
 
-if DJANGO_VERSION < (1, 9):
+# This little hacks forces Django into the old syncdb behaviour,
+# creating models without migrations.
 
-    # This little hacks forces Django into the old syncdb behaviour,
-    # creating models without migrations.
+class DisableMigrations(object):
 
-    class DisableMigrations(object):
+    def __contains__(self, item):
+        return True
 
-        def __contains__(self, item):
-            return True
-
-        def __getitem__(self, item):
+    def __getitem__(self, item):
+        if DJANGO_VERSION < (1, 9):
             return "notmigrations"
-
-
-    MIGRATION_MODULES = DisableMigrations()
-
-else:
-
-    MIGRATION_MODULES = {
-        'treebeard.tests': None,
-    }
 
 INSTALLED_APPS = [
     'django.contrib.auth',
