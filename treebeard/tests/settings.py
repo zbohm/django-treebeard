@@ -54,7 +54,7 @@ def get_db_conf():
 DATABASES = {'default': get_db_conf()}
 SECRET_KEY = '7r33b34rd'
 
-if VERSION < (1, 10):
+if VERSION < (1, 9):
     # This little hacks forces Django into the old syncdb behaviour,
     # creating models without migrations.
 
