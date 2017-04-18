@@ -17,24 +17,32 @@ matrix:
       env: TOXENV=py27-dj19-sqlite
     - python: 2.7
       env: TOXENV=py27-dj110-sqlite
+    - python: 2.7
+      env: TOXENV=py27-dj111-sqlite
     - python: 3.4
       env: TOXENV=py34-dj18-sqlite
     - python: 3.4
       env: TOXENV=py34-dj19-sqlite
     - python: 3.4
       env: TOXENV=py34-dj110-sqlite
+    - python: 3.4
+      env: TOXENV=py34-dj111-sqlite
     - python: 3.5
       env: TOXENV=py35-dj18-sqlite
     - python: 3.5
       env: TOXENV=py35-dj19-sqlite
     - python: 3.5
       env: TOXENV=py35-dj110-sqlite
+    - python: 3.5
+      env: TOXENV=py35-dj111-sqlite
     - python: 3.6
       env: TOXENV=py36-dj18-sqlite
     - python: 3.6
       env: TOXENV=py36-dj19-sqlite
     - python: 3.6
       env: TOXENV=py36-dj110-sqlite
+    - python: 3.6
+      env: TOXENV=py36-dj111-sqlite
 
     - python: 2.7
       env: TOXENV=py27-dj18-postgres
@@ -42,24 +50,32 @@ matrix:
       env: TOXENV=py27-dj19-postgres
     - python: 2.7
       env: TOXENV=py27-dj110-postgres
+    - python: 2.7
+      env: TOXENV=py27-dj111-postgres
     - python: 3.4
       env: TOXENV=py34-dj18-postgres
     - python: 3.4
       env: TOXENV=py34-dj19-postgres
     - python: 3.4
       env: TOXENV=py34-dj110-postgres
+    - python: 3.4
+      env: TOXENV=py34-dj111-postgres
     - python: 3.5
       env: TOXENV=py35-dj18-postgres
     - python: 3.5
       env: TOXENV=py35-dj19-postgres
     - python: 3.5
       env: TOXENV=py35-dj110-postgres
+    - python: 3.5
+      env: TOXENV=py35-dj111-postgres
     - python: 3.6
       env: TOXENV=py36-dj18-postgres
     - python: 3.6
       env: TOXENV=py36-dj19-postgres
     - python: 3.6
       env: TOXENV=py36-dj110-postgres
+    - python: 3.6
+      env: TOXENV=py36-dj111-postgres
 
     - python: 2.7
       env: TOXENV=py27-dj18-mysql
@@ -67,25 +83,32 @@ matrix:
       env: TOXENV=py27-dj19-mysql
     - python: 2.7
       env: TOXENV=py27-dj110-mysql
+    - python: 2.7
+      env: TOXENV=py27-dj111-mysql
     - python: 3.4
       env: TOXENV=py34-dj18-mysql
     - python: 3.4
       env: TOXENV=py34-dj19-mysql
     - python: 3.4
       env: TOXENV=py34-dj110-mysql
+    - python: 3.4
+      env: TOXENV=py34-dj111-mysql
     - python: 3.5
       env: TOXENV=py35-dj18-mysql
     - python: 3.5
       env: TOXENV=py35-dj19-mysql
     - python: 3.5
       env: TOXENV=py35-dj110-mysql
+    - python: 3.5
+      env: TOXENV=py35-dj111-mysql
     - python: 3.6
       env: TOXENV=py36-dj18-mysql
     - python: 3.6
       env: TOXENV=py36-dj19-mysql
     - python: 3.6
       env: TOXENV=py36-dj110-mysql
-
+    - python: 3.6
+      env: TOXENV=py36-dj111-mysql
 
 install:
   - pip install tox codecov
