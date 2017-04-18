@@ -72,7 +72,15 @@ if DJANGO_VERSION < (1, 9):
 
 else:
 
-    MIGRATION_MODULES = {'treebeard': None}
+    MIGRATION_MODULES = {
+        'django.contrib.auth': None,
+        'django.contrib.contenttypes': None,
+        'django.contrib.sessions': None,
+        'django.contrib.admin': None,
+        'django.contrib.messages': None,
+        'treebeard': None,
+        'treebeard.tests': None,
+    }
 
 INSTALLED_APPS = [
     'django.contrib.auth',
